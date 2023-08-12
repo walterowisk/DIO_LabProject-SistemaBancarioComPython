@@ -1,9 +1,9 @@
 menu = """
 
-    [d] Depositar
-    [s] Sacar
-    [e] Extrato
-    [q] Sair
+    [d] Depositar Valor
+    [s] Sacar Valor
+    [e] Consultar Extrato
+    [x] Encerrar Operação
 
     => """
 
@@ -18,7 +18,14 @@ while True:
     opcao = input(menu)
 
     if opcao == "d":
-        print("Depósito")
+        valor = float(input("Informe o valor do depósito: "))
+
+        if valor > 0:
+            saldo += valor
+            extrato += f"Depósito: R$ {valor:.2f}\n"
+        
+        else:
+            print("Operação falhou! Valor informado inválido")
     
     elif opcao == "s":
         print("Saque")
@@ -26,7 +33,7 @@ while True:
     elif  opcao == "e":
         print("Extrato")
 
-    elif opcao == "q":
+    elif opcao == "x":
         break
 
     else:
