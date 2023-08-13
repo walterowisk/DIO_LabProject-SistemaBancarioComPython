@@ -8,9 +8,12 @@
 #  :bank: Desafio: Criando um sistema bancário
 
 
-## :memo: Objetivo Geral
+## :memo: Objetivo geral
 
 Criar um sistema bancário com as operações: sacar, depositar e visualizar extrato.
+
+## :battery: Stack utilizada
+[![My Stack](https://skillicons.dev/icons?i=vscode,git,py)](https://skillicons.dev)
 
 
 ## :punch: Desafio
