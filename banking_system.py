@@ -7,7 +7,7 @@ menu = """
     [e] Consultar Extrato
     [x] Encerrar Operação
 
-    => """
+    >>  """
 
 saldo = 0
 limite = 500
@@ -44,13 +44,13 @@ while True:
             print("Falha na operação! O valor do saque excede o limite de saque único.\n")
 
         elif excedeu_saques:
-            print("Falha na operação! Número máximo de saques excedido.\n")
+            print("Falha na operação! Número máximo de saque diário excedido.\n")
         
         elif valor > 0:
             saldo -= valor
             extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1
-            print("\nSaque realizado. Recolha seu dinheiro.\n")
+            print("\nSaque realizado! Recolha seu dinheiro.\n")
 
         else:
             print("Falha na operação! O valor informado é inválido.\n")
